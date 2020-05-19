@@ -30,14 +30,14 @@
                         {{ with .Site.Data.Research.software.top_heading }}<h2 class="title_section2">{{ . }}</h2>{{ end }}
                         <div class="square" data-wow-delay=".3s" style="display:inline-block">
                             {{ with .Site.Data.Research.software.image }}<img src="{{ . | absURL }}" alt="" class="img-left" style="max-width:20%">{{ end }}
-                            {{ with .Site.Data.Research.software.definition }}<p class="description">{{ . | safeHTML}}</p>{{ end }}
+                            {{ with .Site.Data.Research.software.definition }}<p class="definition">{{ . | safeHTML}}</p>{{ end }}
                         </div>
                     </div>
                     <div class="container">
                         {{ range $index, $element:= .Site.Data.Research.software.items }}
                         <div class="blog-meta">
-                            {{ with .title }}<div class="section"><h3 class="title_section3">{{ . }}</h3>{{ end }}
-                            {{ with .description }}<p class="truncate">{{ . | safeHTML }}</p>{{ end }}
+                            {{ with .title }}<div class="section"><h3 class="title_section3 revealable">{{ . }}</h3>{{ end }}
+                            {{ with .description }}<p class="description truncate">{{ . | safeHTML }}</p>{{ end }}
                             </div>
                         </div>
                         {{ end }}
@@ -59,16 +59,16 @@
                 <article class="wow fadeInDown animated" data-wow-delay=".3s" data-wow-duration="500ms" style="visibility: visible; animation-duration: 500ms; animation-delay: 0.3s; animation-name: fadeInDown;">
                     <div>
                         {{ with .Site.Data.Research.moleculardesign.top_heading }}<h2 class="title_section2">{{ . }}</h2>{{ end }}
-                        <div class="square" data-wow-delay=".3s">
+                        <div class="square" data-wow-delay=".3s" style="display:inline-block">
                        	    {{ with .Site.Data.Research.moleculardesign.image }}<img src="{{ . | absURL }}" alt="" class="img-right" style="max-width:30%">{{ end }}
-                            {{ with .Site.Data.Research.moleculardesign.definition }}<p class="description">{{ . | safeHTML }}</p>{{ end }}
+                            {{ with .Site.Data.Research.moleculardesign.definition }}<p class="definition">{{ . | safeHTML }}</p>{{ end }}
                         </div>
                     </div>
                     <div class="container">
                         {{ range $index, $element:= .Site.Data.Research.moleculardesign.items }}
                         <div class="blog-meta">
                             {{ with .title }}<div class="section"><h3 class="title_section3">{{ . }}</h3>{{ end }}
-                            {{ with .description }}<p class="truncate">{{ . | safeHTML }}</p>{{ end }}
+                            {{ with .description }}<p class="description truncate">{{ . | safeHTML }}</p>{{ end }}
                             </div>
                         </div>
                         {{ end }}
@@ -92,14 +92,14 @@
                         {{ with .Site.Data.Research.biomedicine.top_heading }}<h2 class="title_section2">{{ . }}</h2>{{ end }}
                         <div class="square" data-wow-delay=".3s" style="display:inline-block">
                             {{ with .Site.Data.Research.biomedicine.image }}<img src="{{ . | absURL }}" alt="" class="img-left">{{ end }}
-                            {{ with .Site.Data.Research.biomedicine.definition }}<p class="description">{{ . | safeHTML }}</p>{{ end }}
+                            {{ with .Site.Data.Research.biomedicine.definition }}<p class="definition">{{ . | safeHTML }}</p>{{ end }}
                         </div>
                     </div>
                     <div class="container">
                         {{ range $index, $element:= .Site.Data.Research.biomedicine.items }}
                         <div class="blog-meta">
                             {{ with .title }}<div class="section"><h3 class="title_section3">{{ . }}</h3>{{ end }}
-                            {{ with .description }}<p class="truncate">{{ . | safeHTML }}</p>{{ end }}
+                            {{ with .description }}<p class="description truncate">{{ . | safeHTML }}</p>{{ end }}
                             </div>
                         </div>
                         {{ end }}
